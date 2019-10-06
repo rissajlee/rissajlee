@@ -84,6 +84,7 @@ h4.product {
     color: #000000;
 }
 
+
 h5 {
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 18px;
@@ -111,17 +112,11 @@ p {
     margin-bottom: 3rem;
 }
 
-.clearAbsolute {
-    border: 2px pink solid;
-    position: relative;
-    display: inline-block;
-    width: 100vw;
-    height: 800px;
-    z-index: -10;
+.top15Margin {
+    margin-top: 15rem;
 }
 
 .clear {
-    border: 2px pink solid;
     position: relative;
     display: inline-block;
     width: 100vw;
@@ -179,6 +174,10 @@ div.floatRight {
     padding-top: 3rem;
 }
 
+.span100 {
+    width: 100vw;
+}
+
 /***********HEADER************/
 header {
     position: inline;
@@ -194,7 +193,8 @@ header {
     font-size: 36px;
     font-style: normal;   
     display: inline-block;
-    margin: 2vh 2vw;
+    padding: 2vh 2vw;
+    margin-right: 20vw;
 }
 
 #logo a {
@@ -203,8 +203,9 @@ header {
 }
 
 #navBar {
-    margin-left: 50vw;
+    text-align: right;
     float: right;
+    width: 55vw;
     font-family: essonnes-headline, serif;
     font-weight: 700;
     font-size: 18px;
@@ -229,8 +230,19 @@ header {
 
 footer {
     background-color: #B3B3B3;
-    height: 138px;
+    height: 100px;
     width: 100vw;
+    padding: 2rem 0 0 3rem;
+}
+
+h3.footer {
+    font-size: 15px;
+    color: #000000;
+}
+
+p.footer {
+    font-size: 14px;
+    color: 4D4D4D;
 }
 
 /***********HOMEPAGE************/
@@ -268,8 +280,7 @@ footer {
 
 #homepageImg1 {
     width: 500px;
-    margin: 3rem 0 0 3rem;
-    position: absolute;
+    margin: 3vh 0 0 3vw;
 }
 
 h2 a {
@@ -289,6 +300,7 @@ h2 a:hover {
 
 #shopH2 a {
     position: absolute;
+    width: 145px;
     top: 250px;
     left: 500px;
 }
@@ -313,13 +325,13 @@ h2 a:hover {
 
 #homepageImg2 {
     width: 500px;
-    margin: 3rem 0 0 28rem;
-    position: absolute;
+    margin: 3rem 0 0 40vw;
 }
 
 #aboutH2 a {
     position: absolute;
-    margin: 18rem 0 0 20rem;
+    margin: -40vh 0 0 -60vw;
+    width: 155px;
 }
 
 /***********SHOP************/
