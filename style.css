@@ -47,7 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-
 /* Rissa Lee: Code starts here */
 /***********GLOBAL SETTTINGS***********/
 
@@ -231,8 +230,8 @@ header {
 footer {
     background-color: #B3B3B3;
     height: 100px;
-    width: 100vw;
-    padding: 2rem 0 0 3rem;
+    width: 92vw;
+    padding: 2rem 4vw 0 4vw;
 }
 
 h3.footer {
@@ -336,8 +335,6 @@ h2 a:hover {
 
 /***********SHOP************/
 
-
-
 .mainShop {
     height: auto;
 }
@@ -433,7 +430,7 @@ div.grid_item_2:first-of-type {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
-/* Reference ends here*/
+/* END OF REFERENCE*/
 
 #addToCart {
     background-color: #C2B49A;
@@ -486,7 +483,6 @@ div.floatRightPDP {
 div.floatRightPDP p {
     font-size: 16px;
 }
-
 
 #addToCartPDP {
     background-color: #C2B49A;
