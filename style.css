@@ -96,7 +96,7 @@ h5.singleSpace {
 
 p {
     font-family: 'Hind Siliguri', sans-serif;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .border {
@@ -349,9 +349,8 @@ h2 a:hover {
     grid-row-start: 1;
     grid-row-end: 2;
     margin: 1rem 4rem;
-    height: 300px;
+    height: 340px;
     width: 180px;
-    border:2px red solid;
 }
 
 div.grid_item_1:first-of-type {
@@ -365,8 +364,8 @@ div.grid_item_1:last-of-type {
 .grid_item_2 {
     grid-row-start: 2;
     grid-row-end: 3;
-    height: 300px;
-    width: 200px;
+    height: 340px;
+    width: 180px;
     margin: 3rem 4rem;
 }
 
