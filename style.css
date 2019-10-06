@@ -1,0 +1,511 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Rissa Lee: Code starts here */
+/***********GLOBAL SETTTINGS***********/
+
+body * {
+    display: inline-block;
+}
+
+h2 {
+    font-family: essonnes-headline, serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+h3 {
+    font-family: essonnes-headline, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    display: inline-block;
+    color: #404040;
+}
+
+h4 {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #4D4D4D;
+}
+
+h4.product {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #000000;
+}
+
+h5 {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+h5.singleSpace {
+    line-height: 22px;
+}
+
+p {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 11px;
+}
+
+.border {
+    border: 1px solid #4d4d4d;
+}
+
+.bottom2Margin {
+    margin-bottom: 2rem;
+}
+
+.bottom3Margin {
+    margin-bottom: 3rem;
+}
+
+.clearAbsolute {
+    border: 2px pink solid;
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    height: 800px;
+    z-index: -10;
+}
+
+.clear {
+    border: 2px pink solid;
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    height: cover;
+    z-index: -10;
+}
+
+.descriptor {
+    display: block;
+    text-align: left;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+}
+
+.divider {
+    width: 100vw;
+    height: 3rem;
+}
+
+div.floatLeft {
+    float: left;
+}
+
+div.floatRight {
+    float: right;
+}
+
+.imgPDP {
+    margin: 3rem 6rem 3rem 3rem;
+    height: 564px;
+}
+
+.inline {
+    width: 500px;
+    vertical-align: top;
+}
+
+.main {
+    width: 100vw;
+    height: auto;
+    /* border: 2px green solid; */
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    vertical-align: top;
+    padding-top: 3rem;
+}
+
+/***********HEADER************/
+header {
+    position: inline;
+    width: 100vw;
+    border-bottom: 0.5px #3d3d3d solid;   
+    margin-bottom: 4rem;
+    background-color: #ffffff;
+}
+
+#logo {
+    font-family: essonnes-headline, serif;
+    font-weight: 700;
+    font-size: 36px;
+    font-style: normal;   
+    display: inline-block;
+    margin: 2vh 2vw;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+#navBar {
+    margin-left: 50vw;
+    float: right;
+    font-family: essonnes-headline, serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#navBar li{
+    margin-right: 1rem;
+}
+
+#navBar li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#cart {
+    width: 20px;
+    vertical-align: bottom;
+}
+
+
+/***********FOOTER************/
+
+footer {
+    background-color: #B3B3B3;
+    height: 138px;
+    width: 100vw;
+}
+
+/***********HOMEPAGE************/
+
+
+#homepageBG {
+    background-image: url("HomepageBG.png");
+    width: 100vw;
+    background-size: cover;
+    height: 2812px;
+}
+
+.hero1 {
+    position: relative;
+}
+
+.hero2 {
+    position: relative;
+    width: 97vw;
+    margin-top: 3rem;
+    padding-left: 3vw;
+    margin: 2px green solid;
+}
+
+.hero2 h5,
+.hero2 h3 {
+    display: block;
+    margin: 0 0 1rem 3rem;
+}
+
+.hero2 img {
+    position: relative;
+    display: inline-block;
+}
+
+#homepageImg1 {
+    width: 500px;
+    margin: 3rem 0 0 3rem;
+    position: absolute;
+}
+
+h2 a {
+    font-family: essonnes-headline, serif;
+    font-weight: 600;
+    font-size: 36px;
+    width: cover;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    padding: 0 3px;
+}
+
+h2 a:hover {
+    background-color: #FAAF3F;
+}
+
+#shopH2 a {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+}
+
+#bunIcon {
+    height: 100px;
+    display: inline-block;
+    vertical-align: center;
+} 
+
+#bridgeIcon {
+    height: 100px;
+    display: inline-block;
+    float: right;
+}
+
+#bridgeIconText {
+    display: inline-block;
+    float: right;
+    margin-right: 6rem;
+}
+
+#homepageImg2 {
+    width: 500px;
+    margin: 3rem 0 0 28rem;
+    position: absolute;
+}
+
+#aboutH2 a {
+    position: absolute;
+    margin: 18rem 0 0 20rem;
+}
+
+/***********SHOP************/
+
+
+
+.mainShop {
+    height: auto;
+}
+
+#shopBG {
+    background-image: url("shopBG.png");
+    background-size: 100vw;
+    height: 1333px;
+}
+
+#shop {
+    display: inline-block;
+    margin: 3rem 0;
+}
+
+.grid {
+    display: inline-grid; 
+}
+
+.grid_item_1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 1rem 4rem;
+    height: 300px;
+    width: 180px;
+    border:2px red solid;
+}
+
+div.grid_item_1:first-of-type {
+    margin: 1rem 4rem 1rem 0;
+}
+
+div.grid_item_1:last-of-type {
+    margin: 1rem 0 1rem 4rem;
+}
+
+.grid_item_2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 300px;
+    width: 200px;
+    margin: 3rem 4rem;
+}
+
+div.grid_item_2:first-of-type {
+    margin: 5rem 4rem 3rem 0;
+}
+
+.grid_item_2:last-of-type {
+    margin: 5rem 0 3rem 4rem;
+}
+
+/* Reference W3 School: https://www.w3schools.com/howto/howto_css_dropdown.asp */
+/* Dropdown Button */
+.dropbtn {
+    background-color: #fff;
+    color: #404040;
+    padding: 5px 5px;
+    font-size: 11px;
+    border: 1px #4d4d4d solid;
+    border-radius: 2px;
+    margin-top: 0.5rem;
+    margin-right: 10px;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    font-family: 'hind-siliguri', sans-serif;
+    font-size: 11px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #404040;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+/* Reference ends here*/
+
+#addToCart {
+    background-color: #C2B49A;
+    font-family: 'hind-siliguri', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    width: 150px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 10px 15px;
+}
+
+/***********ORIGINAL************/
+
+#originalBG {
+    background-image: url("originalBG.png");
+    background-size: cover;
+}
+
+div.radio {
+    padding-left: 2rem;
+}
+
+h5.radio {
+    padding: 0 30px 0 5px;
+}
+
+div.glaze {
+    width: 90px;
+    height: 120px;
+    text-align: center;
+    align-items: center;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.nutritionFacts {
+    margin: 0 1rem 3rem 3rem;
+    width: 170px;
+    float: left;
+}
+
+div.floatRightPDP {
+    font-size: 16px;
+    display: inline-block;
+    float: right;
+}
+
+div.floatRightPDP p {
+    font-size: 16px;
+}
+
+
+#addToCartPDP {
+    background-color: #C2B49A;
+    font-family: 'hind-siliguri', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    width: 240px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 10px 15px;
+    box-shadow: 5px 5px 5px #4d4d4d;
+}
+
+#related {
+    padding-left: 2rem;
+    text-align: center;
+    width: 100vw;
+}
+
+
+#relatedProducts {
+    border-top: 1px solid #4d4d4d;
+}
+
+.grid_item_3 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin: 1rem 0.5rem;
+    height: 150px;
+    width: 200px;
+    vertical-align: bottom;
+}
