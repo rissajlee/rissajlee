@@ -115,14 +115,6 @@ p {
     margin-top: 15rem;
 }
 
-.clear {
-    position: relative;
-    display: inline-block;
-    width: 100vw;
-    height: cover;
-    z-index: -10;
-}
-
 .descriptor {
     display: block;
     text-align: left;
@@ -144,7 +136,7 @@ div.floatRight {
 }
 
 .imgPDP {
-    margin: 3rem 6rem 3rem 3rem;
+    margin: 3rem 4rem 3rem 3rem;
     height: 564px;
 }
 
@@ -179,7 +171,6 @@ div.floatRight {
 
 /***********HEADER************/
 header {
-    position: inline;
     width: 100vw;
     border-bottom: 0.5px #3d3d3d solid;   
     margin-bottom: 4rem;
@@ -241,7 +232,7 @@ h3.footer {
 
 p.footer {
     font-size: 14px;
-    color: 4D4D4D;
+    color: #4D4D4D;
 }
 
 /***********HOMEPAGE************/
@@ -263,7 +254,6 @@ p.footer {
     width: 97vw;
     margin-top: 3rem;
     padding-left: 3vw;
-    margin: 2px green solid;
 }
 
 .hero2 h5,
@@ -286,7 +276,7 @@ h2 a {
     font-family: essonnes-headline, serif;
     font-weight: 600;
     font-size: 36px;
-    width: cover;
+    /* width: cover; */
     text-decoration: none;
     color: #000;
     border-radius: 5px;
@@ -432,7 +422,7 @@ div.grid_item_2:first-of-type {
 .dropdown:hover .dropdown-content {display: block;}
 /* END OF REFERENCE*/
 
-#addToCart {
+.addToCart {
     background-color: #C2B49A;
     font-family: 'hind-siliguri', sans-serif;
     font-weight: 700;
@@ -484,7 +474,7 @@ div.floatRightPDP p {
     font-size: 16px;
 }
 
-#addToCartPDP {
+.addToCartPDP {
     background-color: #C2B49A;
     font-family: 'hind-siliguri', sans-serif;
     font-weight: 700;
