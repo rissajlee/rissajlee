@@ -1,55 +1,76 @@
-function whale(name, age) {
-    this.name = name;
-    this.age = age;
-    this.type = "whale";
-    this.image ="whale.png";
+
+/*** Object Constructors ***/
+function Cat(name, age) {
+  this.name = name;
+  this.age = age;
+  this.image = "cat.jpg";
+  this.type = "Cat";
 }
 
-function sheep(name,age) {
-    this.name = name;
-    this.age = age;
-    this.type = "sheep";
-    this.image ="sheep.png";
+function Dog(name, age) {
+  this.name = name;
+  this.age = age;
+  this.image = "dog.jpg"
+  this.type = "Dog";
 }
 
-function chicken(name, age) {
-    this.name = name;
-    this.age = age;
-    this.type = "chicken";
-    this.image ="chicken.png";
+function Bird(name, age) {
+  this.name = name;
+  this.age = age;
+  this.image = "bird.jpg"
+  this.type = "Bird";
 }
 
-var animal = [new whale("whaley", 5), new whale("mary",1), new whale("run", 2)];
 
-var animal2 = [new whale("junior", 2), new sheep("blue", 3), new chicken("gary",80)];
+/*** Global Variables ***/
+var animals = [new Cat(), new Dog(), new Bird()];
+var names = ["Toothless", "Marshmallow", "Momo", "Coco", "Ollie", "Oscar", "Bella", "Ruby", "Apples"];
 
-var generateRandomIndex = function (maxIndex) {
-    var random = Math.floor(Math.random()*maxIndex);
-    console.log(random);
+/*** Functions ***/
+// get a random index for an array from 0 to maxIndex (not inclusive)
+function getRandomIndex(maxIndex) {
+  return Math.floor(Math.random() * maxIndex);
 }
 
-var generateRandomName = function (animal) {
-    var randomIndex = generateRandomIndex(animal.length);
-    var randomAnimal = (animal[randomIndex]).name;
-    console.log(randomAnimal);
-    // return randomAnimal.name;
+// generates either a Cat, Dog, or Bird with a random name and random age
+function generateRandomAnimal() {
+  var randomIdx = getRandomIndex(animals.length);
+  var randomAnimal = animals[randomIdx];
+
+  if (randomAnimal instanceof Cat) 
+  {
+    return new Cat(generateRandomName(), generateRandomAge());
+  } 
+  else if (randomAnimal instanceof Dog) 
+  {
+    return new Dog(generateRandomName(), generateRandomAge());
+  } 
+  else if (randomAnimal instanceof Bird) 
+  {
+    return new Bird(generateRandomName(), generateRandomAge());
+  }
 }
 
-var generateRandomAge = function (animal) {
-    var randomIndex = generateRandomIndex(animal.length);
-    console.log((animal[randomIndex]).age);
+// generates a random name from list of names
+function generateRandomName() {
+  var randomIdx = getRandomIndex(names.length);
+  return names[randomIdx];
 }
 
-var generateRandomAnimal = function (animals) {
-    var randomIdx = generateRandomIndex(animals.length);
-    var randomAnimal = animal[randomIdx];
-    if (randomAnimal instanceof "whale") {
-        return new whale(generateRandomName(animals.length), generateRandomAge(animals.length));
-    }
-    if (randomAnimal instanceof "sheep") {
-        return new sheep(generateRandomName(animals.length), generateRandomAge(animals.length));
-    }
-    if (randomAnimal instanceof "chicken") {
-        return new chicken(generateRandomName(animals.length), generateRandomAge(animals.length));
-    }
+// generates a random age from 0 to 5
+function generateRandomAge() {
+  var randomIdx = getRandomIndex(5);
+  return randomIdx;
 }
+
+/*** Document Load ****/
+function onLoad() {
+
+  // generate a random animal when the document opens
+  var animal = generateRandomAnimal();
+  console.log(animal)
+  // update the page based on the animal properties
+  document.getElementById("animal-properties").textContent = animal.name + "  " + animal.age + "years old";
+  document.getElementById("animal-img").setAttribute("src", animal.image)
+
+};
