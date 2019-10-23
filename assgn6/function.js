@@ -46,18 +46,7 @@ function addQuantity() {
 
 function onLoad() {
 
-    // generate a cart
-    // var cart = {
-        
-    // }
-
-    var auto = new Bun (0, "none", 5.99);
-    console.log(auto)
     sessionStorage.setItem("total", 0);
-    var total = sessionStorage.getItem("total");
-    console.log(total);
-    // update the page based on the animal properties
-    // document.getElementById("animal-properties").textContent = animal.name + "  " + animal.age + "years old";
-    // document.getElementById("animal-img").setAttribute("src", animal.image)
-  
+    console.log(sessionStorage.getItem("total"));
+
   };

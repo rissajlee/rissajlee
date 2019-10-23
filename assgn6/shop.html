@@ -5,10 +5,12 @@
     <link rel="stylesheet" href="https://use.typekit.net/xad4fum.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <!-- Javascript -->
+    <script type="text/javascript" src="function.js"></script>
     <title>Shop All</title>
 </head>
 
-<body>
+<body onload="onLoad()">
     <div id="shopBG">
 
         <header>
@@ -20,7 +22,7 @@
                         <li><a href="">About</a></li>
                         <li><a href="">FAQs</a></li>
                         <!-- Created by Kavya from Noun Project -->
-                        <li><a href="cart.html"><img id="cart" src="assets/cart.png" alt=""> (0)</a></li>
+                        <li><a href="cart.html"><img id="cart" src="assets/cart.png" alt=""></a><p id="cartValue"></p></li>
                     </ul>
                 </div>
         </header>
@@ -217,3 +219,6 @@
     </div>
 
 </body>
+<script>
+    document.getElementById("cartValue").innerHTML = "(" + sessionStorage.getItem("total") + ")";
+</script>
