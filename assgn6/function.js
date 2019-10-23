@@ -34,21 +34,30 @@ function Bun (quantity, glaze, price) {
     this.price = price;
 };
 
-// var n = new Bun (1, "none", 5.99);
-
-// document.getElementById("bunsCart").innerHTML = n;
-
-
-
+function addQuantity() {
+    // Referenced https://stackoverflow.com/questions/9618504/how-to-get-the-selected-radio-button-s-value
+    var radioNumber = document.querySelector('input[name=numberOfBuns]:checked').value;
+    var oldTotal = parseInt(sessionStorage.getItem("total"));
+    var newTotal = parseInt(radioNumber) + oldTotal;
+    sessionStorage.setItem("total", newTotal);
+    console.log(newTotal);
+    document.getElementById("cartValue").innerHTML = "(" + newTotal + ")";
+}
 
 function onLoad() {
 
-    // generate a random animal when the document opens
-    var auto = new Bun (1, "none", 5.99);
+    // generate a cart
+    // var cart = {
+        
+    // }
+
+    var auto = new Bun (0, "none", 5.99);
     console.log(auto)
+    sessionStorage.setItem("total", 0);
+    var total = sessionStorage.getItem("total");
+    console.log(total);
     // update the page based on the animal properties
     // document.getElementById("animal-properties").textContent = animal.name + "  " + animal.age + "years old";
     // document.getElementById("animal-img").setAttribute("src", animal.image)
   
   };
-  

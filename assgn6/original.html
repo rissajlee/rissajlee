@@ -20,11 +20,10 @@
                         <li><a href="">About</a></li>
                         <li><a href="">FAQs</a></li>
                         <!-- Created by Kavya from Noun Project -->
-                        <li><a href=""><img id="cart" src="assets/cart.png" alt=""> (0)</a></li>
+                        <li><a href="cart.html"><img id="cart" src="assets/cart.png" alt=""></a><p id="cartValue"></p></li>
                     </ul>
                 </div>
         </header>
-
         <div class="main left">
             <div class="left">
                 <img src="assets/original.jpg" class="imgPDP" alt="">
@@ -41,16 +40,16 @@
                 <br><br><br>
                 <h4 class="product">Quantity</h4><br><br>
                 <div class="radio">
-                    <input type="radio" name="quantity" value="1"> <h5 class="radio">1</h5>   
+                    <input type="radio" name="numberOfBuns" value="1"> <h5 class="radio">1</h5>   
                 </div>
                 <div class="radio">
-                    <input type="radio" name="quantity" value="3"><h5 class="radio">3</h5>
+                    <input type="radio" name="numberOfBuns" value="3"><h5 class="radio">3</h5>
                 </div>
                 <div class="radio">
-                    <input type="radio" name="quantity" value="6"><h5 class="radio">6</h5>
+                    <input type="radio" name="numberOfBuns" value="6"><h5 class="radio">6</h5>
                 </div>
                 <div class="radio">
-                <input type="radio" name="quantity" value="12"><h5 class="radio">12</h5>
+                <input type="radio" name="numberOfBuns" value="12"><h5 class="radio">12</h5>
                 </div>
                 <br><br><br>
                 <h4 class="product">Glaze</h4><br><br>
@@ -72,13 +71,9 @@
                 </div>
                 <br>
                 <h4 class="product">Total&emsp;&emsp;$5.99/item</h4><br><br>
-                <button class="addToCartPDP" type="button" id="bunsCart">Add to Cart</button>
-
-
-
-
-
+                <button onclick="addQuantity()" class="addToCartPDP" type="button" id="bunsCart">Add to Cart</button>
             </div>
+
 
             <div class="left inline">
                 <img src="assets/NFlabel.png" class="nutritionFacts" alt="">

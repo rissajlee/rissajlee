@@ -118,7 +118,7 @@ p {
 .descriptor {
     display: block;
     text-align: left;
-    margin-left: 5rem;
+    margin-left: 5vw;
     margin-bottom: 3rem;
 }
 
@@ -148,7 +148,6 @@ div.floatRight {
 .main {
     width: 100vw;
     height: auto;
-    /* border: 2px green solid; */
     display: block;
 }
 
@@ -213,6 +212,12 @@ header {
 #cart {
     width: 20px;
     vertical-align: bottom;
+}
+
+#cartValue {
+    font-family: essones-headline, serif;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 
@@ -458,10 +463,6 @@ div.glaze {
     vertical-align: top;
 }
 
-#none {
-    
-}
-
 .nutritionFacts {
     margin: 0 1rem 3rem 3rem;
     width: 170px;
@@ -509,4 +510,68 @@ div.floatRightPDP p {
     height: 150px;
     width: 200px;
     vertical-align: bottom;
+}
+
+/***********CART************/
+
+#cartBackground {
+    background-color: rgba(194,180,154,.4);
+    margin: 0 5vw 5vh 5vw;
+    width: 90vw;
+    height: 90vh;
+    align-items: center;
+}
+
+.grid_item_4 {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    margin: 1rem 1.1rem;
+    height: 8vw;
+    width: 8vw;
+}
+
+.grid_item_5 {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    margin: 1rem 1.1rem;
+    height: 10vw;
+    width: 10vw;
+}
+
+.line {
+    width: 84vw;
+    height: 2px;
+    background-color: #979797;
+    margin: 0 3vw;
+}
+
+#cartSpacer {
+    width: 90vw;
+    height: 70%;
+}
+
+.cartTotal {
+    font-family: 'hind-siliguri', sans-serif;
+    font-size: 22pt;
+    font-weight: 700;
+    text-align: right;
+}
+
+#buttonUnderCart {
+    width: 90vw;
+    text-align: right;
+    margin: 0 5vw;
+    padding-bottom: 3rem;
+}
+
+.toCheckout {
+    background-color: #C2B49A;
+    font-family: 'hind-siliguri', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    width: 262px;
+    height: 62px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 10px;
 }
