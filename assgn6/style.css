@@ -239,7 +239,7 @@ p.footer {
 
 
 #homepageBG {
-    background-image: url("HomepageBG.png");
+    background-image: url("assets/HomepageBG.png");
     width: 100vw;
     background-size: cover;
     height: 2812px;
@@ -330,7 +330,7 @@ h2 a:hover {
 }
 
 #shopBG {
-    background-image: url("shopBG.png");
+    background-image: url("assets/shopBG.png");
     background-size: 100vw;
     height: 1333px;
 }
@@ -437,7 +437,7 @@ div.grid_item_2:first-of-type {
 /***********ORIGINAL************/
 
 #originalBG {
-    background-image: url("originalBG.png");
+    background-image: url("assets/originalBG.png");
     background-size: cover;
 }
 
