@@ -4,6 +4,7 @@ document.getElementById("none").onclick = function() {
     document.getElementById("sugarmilk").style.color = "black";
     document.getElementById("vanillamilk").style.color = "black";
     document.getElementById("doublechoc").style.color = "black";
+    document.getElementById("originalPDPimage").setAttribute("src", "assets/original.jpg")
 };
 
 document.getElementById("sugarmilk").onclick = function() {
@@ -11,6 +12,8 @@ document.getElementById("sugarmilk").onclick = function() {
     document.getElementById("none").style.color = "black";
     document.getElementById("vanillamilk").style.color = "black";
     document.getElementById("doublechoc").style.color = "black";
+    document.getElementById("originalPDPimage").setAttribute("src", "assets/originalSugar.jpg")
+
 };
 
 document.getElementById("vanillamilk").onclick = function() {
@@ -18,6 +21,7 @@ document.getElementById("vanillamilk").onclick = function() {
     document.getElementById("none").style.color = "black";
     document.getElementById("vanillamilk").style.color = "orange";
     document.getElementById("doublechoc").style.color = "black";
+    document.getElementById("originalPDPimage").setAttribute("src", "assets/originalVanilla.jpg")
 
 };
 
@@ -26,6 +30,8 @@ document.getElementById("doublechoc").onclick = function() {
     document.getElementById("none").style.color = "black";
     document.getElementById("vanillamilk").style.color = "black";
     document.getElementById("doublechoc").style.color = "orange";
+    document.getElementById("originalPDPimage").setAttribute("src", "assets/originalChoc.jpg")
+
 };
 
 function Bun (quantity, glaze, price) {
@@ -44,9 +50,15 @@ function addQuantity() {
     document.getElementById("cartValue").innerHTML = "(" + newTotal + ")";
 }
 
-function onLoad() {
 
-    sessionStorage.setItem("total", 0);
-    console.log(sessionStorage.getItem("total"));
+function onLoad() {
+    // to check if something has already been loaded
+    if (sessionStorage.getItem("total") == null) {
+        sessionStorage.setItem("total", 0);
+        console.log(sessionStorage.getItem("total"));
+    } else {
+        document.getElementById("cartValue").innerHTML = "(" + sessionStorage.getItem("total") + ")";
+    }
+
 
   };

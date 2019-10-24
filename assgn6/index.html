@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
     <!-- Javascript -->
-    <script type="text/javascript" src="function.js"></script>
+    <script type="text/javascript" src="function.js" defer></script>
 
     <title>Bun Bun Bake Shop</title>
 </head>
@@ -23,7 +23,7 @@
                         <li><a href="">About</a></li>
                         <li><a href="">FAQs</a></li>
                         <!-- Created by Kavya from Noun Project -->
-                        <li><a href="cart.html"><img id="cart" src="assets/cart.png" alt=""></a><p id="cartValue"></p></li>
+                        <li><a href="cart.html"><img id="cart" src="assets/cart.png" alt=""></a><p id="cartValue">(0)</p></li>
                     </ul>
                 </div>
         </header>
@@ -95,6 +95,3 @@
     </footer>
 
 </body>
-<script>
-    document.getElementById("cartValue").innerHTML = "(" + sessionStorage.getItem("total") + ")";
-</script>
