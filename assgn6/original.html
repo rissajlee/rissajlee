@@ -25,7 +25,6 @@
                 </div>
         </header>
 
-
         <div class="main left">
             <div class="left">
                 <img src="assets/original.jpg" class="imgPDP" alt="" id="originalPDPimage">
@@ -42,16 +41,20 @@
                 <br><br><br>
                 <h4 class="product">Quantity</h4><br><br>
                 <div class="radio">
-                    <input type="radio" name="numberOfBuns" value="1"> <h5 class="radio">1</h5>   
+                    <input type="radio" name="numberOfBuns" value="1" onclick="updatePDPTotal(1)"> 
+                    <h5 class="radio">1</h5>   
                 </div>
                 <div class="radio">
-                    <input type="radio" name="numberOfBuns" value="3"><h5 class="radio">3</h5>
+                    <input type="radio" name="numberOfBuns" value="3" onclick="updatePDPTotal(3)">
+                    <h5 class="radio">3</h5>
                 </div>
                 <div class="radio">
-                    <input type="radio" name="numberOfBuns" value="6"><h5 class="radio">6</h5>
+                    <input type="radio" name="numberOfBuns" value="6" onclick="updatePDPTotal(6)">
+                    <h5 class="radio">6</h5>
                 </div>
                 <div class="radio">
-                <input type="radio" name="numberOfBuns" value="12"><h5 class="radio">12</h5>
+                    <input type="radio" name="numberOfBuns" value="12" onclick="updatePDPTotal(12)">
+                    <h5 class="radio">12</h5>
                 </div>
                 <br><br><br>
                 <h4 class="product">Glaze</h4><br><br>
@@ -72,7 +75,8 @@
                         <h5 class="singleSpace">Double-Choclate</h5>
                 </div>
                 <br>
-                <h4 class="product">Total&emsp;&emsp;$5.99/item</h4><br><br>
+                <h4 class="product" id="originalPDPtotal">Total&emsp;&emsp;$5.99/item</h4>
+                <br><br>
                 <button onclick="addQuantity()" class="addToCartPDP" type="button" id="bunsCart">Add to Cart</button>
             </div>
 

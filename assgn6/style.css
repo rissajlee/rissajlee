@@ -194,7 +194,7 @@ header {
 #navBar {
     text-align: right;
     float: right;
-    width: 55vw;
+    width: 56vw;
     font-family: essonnes-headline, serif;
     font-weight: 700;
     font-size: 18px;
@@ -256,9 +256,9 @@ p.footer {
 
 .hero2 {
     position: relative;
-    width: 97vw;
+    width: 70vw;
     margin-top: 3rem;
-    padding-left: 3vw;
+    margin-left: 10vw;
 }
 
 .hero2 h5,
@@ -319,12 +319,12 @@ h2 a:hover {
 
 #homepageImg2 {
     width: 500px;
-    margin: 3rem 0 0 40vw;
+    margin: 3rem 0 0 50vw;
 }
 
 #aboutH2 a {
     position: absolute;
-    margin: -40vh 0 0 -60vw;
+    margin: -60vh 0 0 -45vw;
     width: 155px;
 }
 
@@ -493,9 +493,9 @@ div.floatRightPDP p {
 }
 
 #related {
-    padding-left: 2rem;
+    padding-left: 2vw;
     text-align: center;
-    width: 100vw;
+    width: 98vw;
 }
 
 

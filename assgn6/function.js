@@ -1,4 +1,5 @@
 // On click on PDP, make visible glaze choice 
+// Referenced https://www.w3schools.com/jsref/met_element_setattribute.asp
 document.getElementById("none").onclick = function() {
     document.getElementById("none").style.color = "orange";
     document.getElementById("sugarmilk").style.color = "black";
@@ -34,12 +35,22 @@ document.getElementById("doublechoc").onclick = function() {
 
 };
 
+
+// Bun constructor
 function Bun (quantity, glaze, price) {
     this.quantity = quantity;
     this.glaze = glaze;
     this.price = price;
-};
+}
 
+
+// Updates price in PDP
+function updatePDPTotal (quantity) {
+    document.getElementById("originalPDPtotal").innerHTML = "Total&emsp;&emsp;$" + (quantity*5.99);
+}
+
+
+// Adds number of buns to cart 
 function addQuantity() {
     // Referenced https://stackoverflow.com/questions/9618504/how-to-get-the-selected-radio-button-s-value
     var radioNumber = document.querySelector('input[name=numberOfBuns]:checked').value;
@@ -51,6 +62,7 @@ function addQuantity() {
 }
 
 
+// Checks stored session value for total buns in cart and updates 
 function onLoad() {
     // to check if something has already been loaded
     if (sessionStorage.getItem("total") == null) {
@@ -59,6 +71,4 @@ function onLoad() {
     } else {
         document.getElementById("cartValue").innerHTML = "(" + sessionStorage.getItem("total") + ")";
     }
-
-
   };
