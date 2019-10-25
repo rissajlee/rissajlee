@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+
+<head>
+     <!--Links to Supporting Files-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xad4fum.css">
+    <title>Original Bun Bun</title>
+    <!-- Javascript -->
+    <script type="text/javascript" src="function.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <div id="originalBG">
+        <header>
+                <h1 id="logo"><a href="index.html">Bun Bun<br>Bake Shop</a></h1>
+                <!-- Navigation Bar -->
+                <div id="nav">
+                    <ul id="navBar">
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <!-- Created by Kavya from Noun Project -->
+                        <li><a href="cart.html"><img id="cart" src="assets/cart.png" alt=""></a><p id="cartValue">(0)</p></li>
+                    </ul>
+                </div>
+        </header>
+
+        <div class="main left">
+            <div class="left">
+                <img src="assets/original.jpg" class="imgPDP" alt="" id="originalPDPimage">
+            </div>
+            <div class="right">
+                <h2>Original Bun Bun</h2><br>
+                <br>
+                <br>
+                <h5>The Original Bun Bun is our best selling Bun Bun to<br>
+                    date! Filled with a rich, fluffy whipped cream, the<br>
+                    Original is the perfect snack for a coffee date, a<br> 
+                    study session, or an after-dinner dessert.<br>
+                    Serves 1.</h5>
+                <br><br><br>
+                <h4 class="product">Quantity</h4><br><br>
+                <div class="radio">
+                    <input type="radio" name="numberOfBuns" value="1" onclick="updatePDPTotal(1)"> 
+                    <h5 class="radio">1</h5>   
+                </div>
+                <div class="radio">
+                    <input type="radio" name="numberOfBuns" value="3" onclick="updatePDPTotal(3)">
+                    <h5 class="radio">3</h5>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="numberOfBuns" value="6" onclick="updatePDPTotal(6)">
+                    <h5 class="radio">6</h5>
+                </div>
+                <div class="radio">
+                    <input type="radio" name="numberOfBuns" value="12" onclick="updatePDPTotal(12)">
+                    <h5 class="radio">12</h5>
+                </div>
+                <br><br><br>
+                <h4 class="product">Glaze</h4><br><br>
+                <div class="glaze" id="none">
+                    <img src="assets/None.png" alt="">
+                    <h5>None</h5>
+                </div>
+                <div class="glaze" id="sugarmilk">
+                        <img src="assets/SugarMilk.png" alt="">
+                        <h5>Sugar-Milk</h5>
+                </div>
+                <div class="glaze" id="vanillamilk">
+                        <img src="assets/VanillaMilk.png" alt="">
+                        <h5 class="singleSpace">Vanilla-Milk</h5>
+                </div>
+                <div class="glaze" id="doublechoc">
+                        <img src="assets/DoubleChoc.png" alt="">
+                        <h5 class="singleSpace">Double-Choclate</h5>
+                </div>
+                <br>
+                <h4 class="product" id="originalPDPtotal">Total&emsp;&emsp;$5.99/item</h4>
+                <br><br>
+                <button onclick="addQuantity()" class="addToCartPDP" type="button" id="bunsCart">Add to Cart</button>
+            </div>
+
+
+            <div class="left inline">
+                <img src="assets/NFlabel.png" class="nutritionFacts" alt="">
+                <div class="floatRightPDP">
+                    <p class="border"><strong>Ingredients:</strong> (Bun Bun) Flour, Water,<br>
+                        Milk, Egg, Butter, Sugar, Cardamom;<br> 
+                        (Whipped Cream) Heavy Cream,<br>
+                        Powdered Sugar, Vanilla Extract*<br>
+                    </p>
+                    <br><br><br>
+                    <p>*All our ingredients are sourced from<br>
+                            local vendors and are organic and<br>
+                            GMO-free. Our Bun Buns are not safe<br>
+                            for vegans and include dairy and meat<br>
+                            products. For any specific questions<br>
+                            regarding our ingredients and process,<br>
+                            please email <strong>support@bbbs.com.</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="relatedProducts">
+            <div class="grid" id="related">
+                <div class="grid_item_3">
+                    <h3><br><br>Other Bun Buns You May Like...</h3>
+                </div>
+                <div class="grid_item_3">
+                    <img src="assets/Walnut.png" height="104" alt=""><br>
+                    <h5>Walnut</h5>
+                </div>
+                <div class="grid_item_3">
+                        <img src="assets/Blackberry.png" height="104" alt=""><br>
+                        <h5>Blackberry</h5>
+                </div>    
+                <div class="grid_item_3">
+                        <img src="assets/PumpkinSpice.png" height="104" alt="">
+                        <h5>Pumpkin Spice</h5>
+                </div>    
+            </div>
+        </div>
+
+        <footer>
+            <div class="left">
+                <h3 class="footer">Bun Bun Bake Shop</h3><br>
+                <p class="footer">About</p><br>
+                <p class="footer">FAQs</p><br>
+                <p class="footer">Cart</p><br>
+            </div>    
+            <div class="floatRight">
+                <h3 class="footer">Follow Us At</h3><br><br>
+                <!-- ICONS from: https://www.sketchappsources.com/free-source/2841-social-media-brand-icons-sketch-freebie-resource.html -->
+                <img src="assets/socialMedia.png" width="90" alt="">
+            </div>    
+        </footer>
+    </div>
+    
+</body>
+<script type="text/javascript" src="function.js"></script>
