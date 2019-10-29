@@ -64,11 +64,19 @@ function addQuantity() {
 
 // Checks stored session value for total buns in cart and updates 
 function onLoad() {
-    // to check if something has already been loaded
+    //  checks if something has already been loaded
     if (sessionStorage.getItem("total") == null) {
         sessionStorage.setItem("total", 0);
-        console.log(sessionStorage.getItem("total"));
+    //  otherwise updates the cart value
     } else {
-        document.getElementById("cartValue").innerHTML = "(" + sessionStorage.getItem("total") + ")";
+       document.getElementById("cartValue").innerHTML = "(" + sessionStorage.getItem("total") + ")";
     }
-  };
+
+    console.log(sessionStorage.getItem("total"));
+
+    // declares a stored cart array if none exists already
+    if (sessionStorage.getItem("cartList") == null ) {
+        sessionStorage.setItem("cartList", JSON.stringify(array));
+    }
+    console.log(JSON.parse(sessionStorage.getItem("cartList")));
+  }
