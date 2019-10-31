@@ -103,41 +103,43 @@ function showCart() {
         var glaze = bun.glaze;
         var price = bun.price;
 
-            var newRow = document.createElement('div');
-            newRow.setAttribute('class', 'grid');
-            newRow.setAttribute('id', i)
-            var newGrid1 = document.createElement('div');
-            newGrid1.setAttribute('class', "grid_item_4");
-            newGrid1.innerHTML = quantity;
-            var newGrid2 = document.createElement('div');
-            newGrid2.setAttribute("class", "grid_item_5");
-            newGrid2.innerHTML = "original";
-            var newGrid3 = document.createElement('div');
-            newGrid3.setAttribute("class", "grid_item_4");
-            var newGrid4 = document.createElement('div');
-            newGrid4.innerHTML = glaze;
-            newGrid4.setAttribute("class", "grid_item_5");
-            var newGrid5 = document.createElement('div');
-            newGrid5.setAttribute("class", "grid_item_4");
-            var newGrid6 = document.createElement('div');
-            newGrid6.setAttribute("class", "grid_item_5");
-            var newGrid7 = document.createElement('div');
-            newGrid7.setAttribute("class", "grid_item_4");
-            newGrid7.innerHTML = price;
-            var newGrid8 = document.createElement('div');
-            newGrid8.setAttribute("class", "grid_item_6");
-            newGrid8.setAttribute("onclick", "deleteFromCart(this)");
-            newGrid8.innerHTML = "x";
-
-            newRow.appendChild(newGrid1);
-            newRow.appendChild(newGrid2);
-            newRow.appendChild(newGrid3);
-            newRow.appendChild(newGrid4);
-            newRow.appendChild(newGrid5);
-            newRow.appendChild(newGrid6);
-            newRow.appendChild(newGrid7);
-            newRow.appendChild(newGrid8);
-            cartGrid.appendChild(newRow);
+        // Creates new row with price information
+        var newRow = document.createElement('div');
+        newRow.setAttribute('class', 'grid');
+        newRow.setAttribute('id', i)
+        var newGrid1 = document.createElement('div');
+        newGrid1.setAttribute('class', "grid_item_4");
+        newGrid1.innerHTML = quantity;
+        var newGrid2 = document.createElement('div');
+        newGrid2.setAttribute("class", "grid_item_5");
+        newGrid2.innerHTML = "original bun bun";
+        var newGrid3 = document.createElement('div');
+        newGrid3.setAttribute("class", "grid_item_4");
+        newGrid3.innerHTML = "with glaze";
+        var newGrid4 = document.createElement('div');
+        newGrid4.innerHTML = glaze;
+        newGrid4.setAttribute("class", "grid_item_5");
+        var newGrid5 = document.createElement('div');
+        newGrid5.setAttribute("class", "grid_item_4");
+        var newGrid6 = document.createElement('div');
+        newGrid6.setAttribute("class", "grid_item_5");
+        newGrid6.innerHTML = "Total:";
+        var newGrid7 = document.createElement('div');
+        newGrid7.setAttribute("class", "grid_item_4");
+        newGrid7.innerHTML = "$" + price;
+        var newGrid8 = document.createElement('div');
+        newGrid8.setAttribute("class", "grid_item_6");
+        newGrid8.setAttribute("onclick", "deleteFromCart(this)");
+        newGrid8.innerHTML = "x";
+        newRow.appendChild(newGrid1);
+        newRow.appendChild(newGrid2);
+        newRow.appendChild(newGrid3);
+        newRow.appendChild(newGrid4);
+        newRow.appendChild(newGrid5);
+        newRow.appendChild(newGrid6);
+        newRow.appendChild(newGrid7);
+        newRow.appendChild(newGrid8);
+        cartGrid.appendChild(newRow);
     }
 }
 
@@ -158,11 +160,7 @@ function deleteFromCart(deleteX) {
     var printPrice = sessionStorage.getItem("cartTotal")
     document.getElementById("cartPageTotal").innerHTML = "$&emsp;" + newPrice;
 
-
-
     cart.splice(index,1);
-
-    console.log(cart);
 
     sessionStorage.setItem("shoppingCart", JSON.stringify(cart));
 
