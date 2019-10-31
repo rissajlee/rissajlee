@@ -1,3 +1,3 @@
-Update from the last submission (assignment 5):
+Update from the last submission (assignment 6A):
 
-All non html, css, js assets have been moved to this folder.
+New assets for images that appear on cart page.
