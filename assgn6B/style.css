@@ -518,7 +518,7 @@ div.floatRightPDP p {
     background-color: rgba(194,180,154,.4);
     margin: 0 5vw 5vh 5vw;
     width: 90vw;
-    height: 90vh;
+    height: 100%;
     align-items: center;
 }
 
@@ -526,16 +526,32 @@ div.floatRightPDP p {
     grid-row-start: 1;
     grid-row-end: 5;
     margin: 1rem 1.1rem;
-    height: 8vw;
-    width: 8vw;
+    height: 7vw;
+    width: 7vw;
+    border: 2px yellow solid;
+    text-align: center;
+    vertical-align: baseline;
 }
 
 .grid_item_5 {
     grid-row-start: 1;
     grid-row-end: 5;
     margin: 1rem 1.1rem;
-    height: 10vw;
-    width: 10vw;
+    height: 9vw;
+    width: 9vw;
+    border: 2px green solid;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.grid_item_6 {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    margin: 1rem 0.5rem;
+    padding-top: 2rem;
+    height: 1vw;
+    width: 1vw;
+    border: 2px red solid;
 }
 
 .line {
@@ -552,7 +568,7 @@ div.floatRightPDP p {
 
 .cartTotal {
     font-family: 'hind-siliguri', sans-serif;
-    font-size: 22pt;
+    font-size: 18pt;
     font-weight: 700;
     text-align: right;
 }
