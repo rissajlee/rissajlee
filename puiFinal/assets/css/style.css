@@ -1,0 +1,353 @@
+
+/* Global Settings */
+body {
+    padding: 15px 15px 0 15px;
+}
+
+a {
+    color: black;
+}
+
+footer p {
+    font-style: italic;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+/*  */
+/* Main Page */
+/*  */
+#homepageBG {
+    /* background: linear-gradient(#9B9B9B, #ffffff);  */
+    background-image: url(../images/astral.png);
+    background-size: 100vh;
+    background-position: right;
+    background-repeat: repeat;
+}
+
+#mainTitle {
+    font-family: 'Hiragino Kaku Gothic StdN', 'sans-serif';
+    font-size: 100pt;
+}
+
+#portrait {
+    width: 40vw;
+}
+
+#portrait2 {
+    width: 40vw;
+}
+
+#mainParagraph {
+    font-size: 16pt;
+    margin-bottom: 80px;
+    text-align: right;
+}
+
+#secondParagraph {
+    font-family: 'Hiragino Kaku Gothic StdN', 'sans-serif';
+    font-size: 14pt;
+}
+
+h2 {
+    font-family: 'Hiragino Kaku Gothic StdN', 'sans-serif';
+    font-size: 58pt;
+}
+
+h3 {
+    font-size: 14pt;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 12pt;
+    font-style: italic;
+}
+
+.col-md {
+    position: relative;
+}
+
+/* All Book Covers in Grid */
+
+div#WN {
+    background-image: url(../images/WN.png);
+    background-size: contain;
+}
+
+div#WN:hover {
+    background-image: url(../images/WNt.png);
+    z-index: 2;
+}
+
+div#IC {
+    background-image: url(../images/IC.png);
+    background-size: contain;
+}
+
+div#IC:hover{
+    background-image: url(../images/ICt.png);
+    z-index:2;
+}
+
+div#BT {
+    background-image: url(../images/BT.png);
+    background-size: contain;
+}
+
+div#BT:hover{
+    background-image: url(../images/BTt.png);
+    z-index:2;
+}
+
+div#UJS {
+    background-image: url(../images/UJS.png);
+    background-size: contain;
+}
+
+div#UJS:hover{
+    background-image: url(../images/UJSt.png);
+    z-index:2;
+}
+
+div#IF {
+    background-image: url(../images/IF.png);
+    background-size: contain;
+}
+
+div#IF:hover{
+    background-image: url(../images/IFt.png);
+    z-index:2;
+}
+
+div#DL {
+    background-image: url(../images/DL.png);
+    background-size: contain;
+}
+
+div#DL:hover{
+    background-image: url(../images/DLt.png);
+    z-index:2;
+}
+
+/* spacer to keep row at specific height */
+.filler {
+    height: 500px;
+}
+
+/* All Overlays */
+/* Referenced https://www.w3schools.com/howto/howto_css_overlay.asp */
+
+/* positions for overlays in row 1 */
+.overlay {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 170vh;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    /* -ms-transform: translate(-100%%,-100%); */
+}
+
+/* positions for overlays in row 2 */
+.overlay2 {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 230vh;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    /* -ms-transform: translate(-100%%,-100%); */
+}
+
+/*  */
+/* Timeline Page */
+/*  */
+
+#subheading {
+    font-family: 'Hiragino Kaku Gothic StdN', 'sans-serif';
+    font-size: 48pt;
+}
+
+#calvinoVoice{
+    margin-top: 30px;
+    float: left;
+}
+
+/* display settings for each timeline event */
+.event {
+    display: block;
+    width: 40vw;
+    margin-top: 10px;
+}
+
+/*  */
+/* Adjustment for Responsive Website */
+/*  */
+@media only screen and (max-width: 1300px) {
+
+    .overlay {
+        top: 150vh;
+    }
+
+    .overlay2 {
+        top: 210vh;
+    }
+
+    .event {
+        background-size: 40vw;
+    }
+
+    .col-md {
+        height: 500px;
+        width: 400px;
+    }
+
+    .filler {
+        height: 500px;
+    }
+
+} 
+
+@media only screen and (max-width: 1000px) {
+
+    .filler {
+        height: 340px;
+    }
+
+    .overlay {
+        top: 160vh;
+    }
+
+    .overlay2 {
+        top: 200vh;
+    }
+
+    .event {
+        width: 60vw;
+    }
+
+    .col-md {
+        height: 400px;
+        width: 600px;
+    }
+
+    .filler {
+        height: 400px;
+    }
+
+} 
+
+
+@media only screen and (max-width: 780px) {
+
+    
+    #mainTitle {
+        font-size: 72pt;
+    }
+    
+    #overlayWN {
+        top: 150vh;
+    }
+
+    #overlayIC {
+        top: 240vh;
+    }
+
+    #overlayBT {
+        top: 330vh;
+    }
+
+    #overlayUJS {
+        top: 420vh;
+    }
+
+    #overlayIF {
+        top: 510vh;
+    }
+
+    #overlayDL {
+        top: 600vh;
+    }
+
+    .event {
+        width: 80vw;
+    }
+
+    .col-md {
+        height: 700px;
+        width: 600px;
+    }
+
+    .filler {
+        height: 2100px;
+    }
+
+    div#WN, div#IC,
+    div#BT, div#UJS, 
+    div#IF, div#DL {
+        background-size: 500px auto;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    body#homeBG {
+        padding: 0;
+    }
+
+    #mainTitle {
+        text-align: center;
+        font-size: 46pt;
+    }
+
+    #portrait {
+        width: 70vw;
+        margin-left: 50px;
+    }
+
+    #mainParagraph {
+        font-size: 14pt;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 18pt;
+        width: 100vw;
+        text-align: center;
+    }
+
+    #secondParagraph {
+        text-align: center;
+        font-size: 12pt;
+    }
+
+    .overlay,
+    .overlay2 {
+        width: 100vw;
+    }
+
+    #subheading {
+        font-size: 36pt;
+    }
+
+    .event {
+        width: 100%;
+    }
+}

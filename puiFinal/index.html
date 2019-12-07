@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Scroll Reveal JS Library-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- Page -->
+    <title>Exploring Calvino</title>
+  </head>
+
+  <body id="homepageBG" onload="setup()">
+    <!-- Title of Page -->
+    <h1 id="mainTitle">Italo Calvino</h1>
+    <!-- Grid top of page content-->
+    <div class="container">
+      <!-- Calvino's face/navigation to timeline -->
+      <div class="row">
+        <div class="col-sm">
+        </div>
+        <div class="col-sm">
+        </div>
+        <div class="col- right">
+            <a href="calvino.html"><img src="assets/images/CalvinoFace.png" id="portrait"></a>
+        </div>
+      </div>
+      <!-- Short description of Calvino -->
+      <div class="row">
+        <div class="col-sm" id="mainParagraph">
+          <br>Novelist, essayist, thinker&mdash;Italo Calvino is one of the most-translated contemporary Italian writers.<br>
+          Explore his work below, or hover over his portrait to learn about this prolific author's life.
+        </div>
+      </div>
+    </div>
+
+    <!-- Second half of page dedicated to notable writing works -->
+    <h2>Notable Works</h2>
+    <p id="secondParagraph">Calvino's works live on. Click on them to hear their stories.</p>
+
+    <!-- Grid for covers -->
+    <div class="container">
+      
+    <!-- All Book Covers -->
+    <!-- Row 1 -->
+      <div class="row filler">
+        <div class="col-md animated infinite slower pulse" id="WN" onclick="onWN()"></div>
+        <div class="col-md animated infinite slower pulse delay-1s" id="IC" onclick="onIC()"></div>
+        <div class="col-md animated infinite slower pulse delay-2s" id="BT" onclick="onBT()"></div>
+      </div>
+      <!-- Row 2  -->
+      <div class="row filler">
+        <div class="col-md animated infinite slower pulse delay-1s" id="UJS" onclick="onUJS()"></div>
+        <div class="col-md animated infinite slower pulse delay-2s" id="IF" onclick="onIF()"></div>
+        <div class="col-md animated infinite slower pulse" id="DL" onclick="onDL()"></div>
+      </div>
+
+    </div>
+
+    <!-- All Book Summary Overlays (default hidden) -->
+    <div onclick="offWN()">
+        <div id="overlayWN" class="overlay">
+        <h3>If on a winter&apos;s night a traveler</h3><br><br>
+        Italo Calvino imagines a novel capable of endless mutations in
+        this intricately crafted story about writing and readers.
+        If on a Winter&apos;s Night a Traveler turns out to be not one novel but ten
+        with a different plot, style, ambience, and author, and each interrupted
+        at a moment of suspense. Together they form a labyrinth of literatures,
+        known and unknown, alive and extinct, through which two readers, a male and a
+        female, pursue both the story lines that intrigue them and one another.
+        <br><br>
+        <h4>Click to Close</h4>
+    </div>
+
+    <div onclick="offIC()">
+          <div id="overlayIC" class="overlay">
+          <h3>Invisible Cities</h3><br><br>
+          In a garden sit the aged Kublai Khan and the young
+          Marco Polo &mdash; Mongol emperor and Venetian traveler. Kublai
+          Khan has sensed the end of his empire coming soon. Marco Polo
+          diverts his host with stories of the cities he has seen in his
+          travels around the empire: cities and memory, cities and desire,
+          cities and designs, cities and the dead, cities and the sky,
+          trading cities, hidden cities. As Marco Polo unspools his tales,
+          the emperor detects these fantastic places are more than they appear.
+          <br><br>
+          Click to Close
+    </div>
+
+    <div onclick="offBT()">
+        <div id="overlayBT" class="overlay">
+        <h3>The Baron in the Trees</h3><br><br>
+        Cosimo di Rondo, a young Italian nobleman of the eighteenth century, 
+        rebels against his parents by climbing into the trees and remaining there 
+        for the rest of his life. He adapts efficiently to an existence in the forest
+        canopy &mdash; he hunts, sows crops, plays games with earth-bound friends, 
+        fights forest fires, solves engineering problems, and even manages to have
+        love affairs. From his perch in the trees, Cosimo sees the Age of Enlightenment
+        pass by and a new century dawn.
+        <br><br>
+        Click to Close
+  </div>
+
+  <div onclick="offUJS()">
+      <div id="overlayUJS" class="overlay2">
+      <h3>Under the Jaguar Sun</h3><br><br>
+      These intoxicating stories delve down to the core of our senses of taste, 
+      hearing, and smell. Amid the flavors of Mexico&apos;s fiery chiles and spices, 
+      a couple on holiday discovers dark secrets about the maturing desire in 
+      the title story, &quot;Under the Jaguar Sun.&quot; In &quot;A King Listens,&quot;	
+      a gripping portrait of a frenzied mind, the menacing echoes in a huge palace
+      spur a tyrant&apos;s thoughts to the heights of paranoid intensity. &quot;The Name, 
+      the Nose&quot;	drives to a startling conclusion as men across time and space
+      pursue the women whose aromas have enchanted them. Mordant and deliciously 
+      offbeat, this trio of tales is a treat from a master of short fiction.
+      <br><br>
+      Click to Close
+  </div>
+
+
+  <div onclick="offIF()">
+      <div id="overlayIF" class="overlay2">
+      <h3>Italian Folktales</h3><br><br>
+      Filed with kings and peasants, saints and ogres &mdash; as well as some 
+      quite extraordinary plants and animals &mdash; these two hundred tales 
+      bring to life Italy's folklore, somtimes with earthy humor, sometimes 
+      with noble mystery, and sometimes with the playfulness of sheer nonsense.
+      <br><br>
+      Click to Close
+  </div>
+
+  <div onclick="offDL()">
+      <div id="overlayDL" class="overlay2">
+      <h3>Difficult Loves</h3><br><br>
+      In Difficult Loves, Italy&apos;s master storyteller weaves tales in which 
+      cherished deceptions and illusions of love &mdash; including self-love 
+      &mdash; are swept away in magical instants of recognition. A soldier is 
+      reduced to quivering fear by the presence of a full-figured woman in his 
+      train compartment; a young clerk leaves a lady&apos;s bed at down; a young 
+      woman is isolated from bathers on a beach by the loss of her bikini bottom.
+      Each of them discovers hidden truths beneath the surface of everyday life.
+      <br><br>
+      Click to Close
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      All information about the novels has been sourced from hmhbooks.com/author/Italo-Calvino/60259.
+    </p>
+  </footer>  
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <!-- Custom Javascript File -->
+  <script src="assets/javascript/function.js"></script>
+
+  </body>
+</html>
