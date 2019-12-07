@@ -14,7 +14,6 @@ document.getElementById("sugarmilk").onclick = function() {
     document.getElementById("vanillamilk").style.color = "black";
     document.getElementById("doublechoc").style.color = "black";
     document.getElementById("originalPDPimage").setAttribute("src", "assets/originalSugar.jpg")
-
 };
 
 document.getElementById("vanillamilk").onclick = function() {
@@ -23,7 +22,6 @@ document.getElementById("vanillamilk").onclick = function() {
     document.getElementById("vanillamilk").style.color = "orange";
     document.getElementById("doublechoc").style.color = "black";
     document.getElementById("originalPDPimage").setAttribute("src", "assets/originalVanilla.jpg")
-
 };
 
 document.getElementById("doublechoc").onclick = function() {
@@ -32,7 +30,6 @@ document.getElementById("doublechoc").onclick = function() {
     document.getElementById("vanillamilk").style.color = "black";
     document.getElementById("doublechoc").style.color = "orange";
     document.getElementById("originalPDPimage").setAttribute("src", "assets/originalChoc.jpg")
-
 };
 
 
@@ -59,6 +56,9 @@ function addQuantity() {
     sessionStorage.setItem("total", newTotal);
     console.log(newTotal);
     document.getElementById("cartValue").innerHTML = "(" + newTotal + ")";
+
+    
+
 }
 
 
