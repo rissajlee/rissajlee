@@ -24,11 +24,7 @@ footer p {
 /* Main Page */
 /*  */
 #homepageBG {
-    /* background: linear-gradient(#9B9B9B, #ffffff);  */
-    background-image: url(../images/astral.png);
-    background-size: 100vh;
-    background-position: right;
-    background-repeat: repeat;
+    background: linear-gradient(#ffffff, #9B9B9B); 
 }
 
 #mainTitle {
@@ -156,7 +152,6 @@ div#DL:hover{
     left: 50%;
     color: white;
     transform: translate(-50%,-50%);
-    /* -ms-transform: translate(-100%%,-100%); */
 }
 
 /* positions for overlays in row 2 */
@@ -171,7 +166,6 @@ div#DL:hover{
     left: 50%;
     color: white;
     transform: translate(-50%,-50%);
-    /* -ms-transform: translate(-100%%,-100%); */
 }
 
 /*  */

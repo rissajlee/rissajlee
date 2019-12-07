@@ -1,6 +1,26 @@
 // 
+// Calvino Life Page
+// 
+
+// Scroll Reveal js library used for Calvino Life page events
+ScrollReveal().reveal('.event', {delay: 800});
+ScrollReveal().reveal('.event right', { delay: 1000 });
+
+// Audio on Calvino Life Page 
+// Referenced https://www.w3schools.com/html/html5_audio.asp
+let song; 
+
+function setup() {
+    song = loadSound('../audio/calvino.mp3');
+    song.play();
+}
+
+
+
+// 
 // Main Page
 // 
+
 
 // Dynamic portrait on Main Page/button to Calvino Life Page
 document.getElementById("portrait").onmouseover = function() {
@@ -61,19 +81,3 @@ function offDL() {
     document.getElementById("overlayDL").style.display = "none";
 }
 
-// 
-// Calvino Life Page
-// 
-
-// Audio on Calvino Life Page 
-// Referenced https://www.w3schools.com/html/html5_audio.asp
-let song; 
-
-function setup() {
-    song = loadSound('../audio/calvino.mp3');
-    song.play();
-}
-
-// Scroll Reveal js library used for Calvino Life page events
-ScrollReveal().reveal('.event', {delay: 800});
-ScrollReveal().reveal('.event right', { delay: 1000 });
